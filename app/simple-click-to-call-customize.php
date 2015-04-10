@@ -5,7 +5,7 @@ if ( isset( $_GET['simple-click-to-call-accion'] ) && $_GET['simple-click-to-cal
 	?>
 	<div class="wrap">
 		<h2><?php echo __('Personalizar Simple Click To Call', 'revisionalpha_simpleclicktocall'); ?></h2>
-		<form action="<?php echo admin_url('admin.php?page=revisionalpha-simple-click-to-call/app/simple-click-to-call-customize.php'); ?>" method="POST">
+		<form action="<?php echo admin_url('admin.php?page=simple-click-to-call/app/simple-click-to-call-customize.php'); ?>" method="POST">
 			<input type="hidden" name="simple-click-to-call-accion" value="restaurar">
 			<p>&iquest;Est&aacute; seguro que desea restaurar los valores por defecto?</p>
 			<input type="submit" id="simple-click-to-call-restaurar" class="button" value="<?php echo __('Restaurar valores por defecto', 'revisionalpha_simpleclicktocall'); ?>">
@@ -18,7 +18,7 @@ elseif ( isset( $_POST['simple-click-to-call-accion'] ) && $_POST['simple-click-
 {
 	update_option( 'revisionalpha_simpleclicktocall_form_settings', '' );
 	
-	$location = admin_url('admin.php?page=revisionalpha-simple-click-to-call/app/simple-click-to-call-customize.php');
+	$location = admin_url('admin.php?page=simple-click-to-call/app/simple-click-to-call-customize.php');
 	wp_redirect( $location . '&updated=ok' );
 	exit;
 }
@@ -128,7 +128,7 @@ elseif ( isset( $_POST['simple-click-to-call-accion'] ) && $_POST['simple-click-
 		
 		update_option( 'revisionalpha_simpleclicktocall_form_settings', $options );
 		
-		$location = admin_url( 'admin.php?page=revisionalpha-simple-click-to-call/app/simple-click-to-call-customize.php' );
+		$location = admin_url( 'admin.php?page=simple-click-to-call/app/simple-click-to-call-customize.php' );
 		wp_redirect( $location . '&updated=ok' );
 		exit;
 	}
