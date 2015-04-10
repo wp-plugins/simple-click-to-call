@@ -18,7 +18,7 @@ Podrás ayudar a tus futuros clientes en la decisión de contratar los servicios
 
 == Installation ==
 
-1. Unzip `revisionalpha-simple-click-to-call.zip` in the `/wp-content/plugins/` directory, making sure the folder is called `revisionalpha-simple-click-to-call`.
+1. Unzip `simple-click-to-call.zip` in the `/wp-content/plugins/` directory, making sure the folder is called `simple-click-to-call`.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Visit the admin page `Click To Call` and save your preferences.
 
